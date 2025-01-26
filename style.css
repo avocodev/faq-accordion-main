@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Dark-purple: hsl(292, 42%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Medium-weight: 600;
+  --Light-weight: 400;
+  --Bold-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--Light-pink);
+  font-family: "Work Sans", serif;
+  position: relative;
+  font-size: 16px;
+  width: 375px;
+}
+
+.background-image {
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  max-height: auto;
+  height: 232px;
+  width: 100%;
+}
+
+#main-content {
+  background-color: var(--White);
+  box-shadow: 0 20px 30px rgb(190, 190, 190);
+  border-radius: 10px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 25px;
+  width: 85%;
+
+  position: absolute;
+  right: 22px;
+  top: 150px;
+  left: 15px;
+}
+
+.text-title {
+  margin-bottom: 1em;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-star {
+  width: 25px;
+}
+
+.question-one,
+.question-two,
+.question-three {
+  border-bottom: 2px solid rgb(240, 240, 240);
+  margin-bottom: 2em;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-sub-title {
+  font-size: 1em;
+  font-weight: var(--Medium-weight);
+  margin-bottom: 1.5em;
+  width: 230px;
+}
+
+.plus-button {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.paragraph {
+  font-size: .85rem;
+  font-weight: var(--Light-weight);
+  line-height: 22px;
+  color: rgb(90, 90, 90);
+  margin-bottom: 1.5em;
+}
+
+.attribution {
+  position: absolute;
+  bottom: -550px;
+  left: 25px;
+  right: 30px;
+  z-index: -999;
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .background-image {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+
+  #main-content {
+    width: 90%;
+  }
+
+  .text-sub-title {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    width: 560px;
+  }
+
+  .paragraph {
+    font-size: .9em;
+  }
+}
+
+/* Style for JavaScript Toggled */
+.js-paragraph {
+  display: none;
+}
+
+.js-show {
+  display: block;
+}
