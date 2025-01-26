@@ -7,10 +7,10 @@ plusElement.forEach((button, buttonIndex) => {
       if (buttonIndex === paraIndex) {
         if (!paragraph.classList.contains('js-show')) {
           paragraph.classList.add('js-show');
-          button.src = 'http://127.0.0.1:5500/faq-accordion-main/assets/images/icon-minus.svg'
+          button.src = './assets/images/icon-minus.svg'
         } else {
           paragraph.classList.remove('js-show');
-          button.src = 'http://127.0.0.1:5500/faq-accordion-main/assets/images/icon-plus.svg'
+          button.src = './assets/images/icon-plus.svg'
         }
       }
     })
